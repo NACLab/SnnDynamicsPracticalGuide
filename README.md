@@ -1,6 +1,6 @@
 # A Practical Guide to Tuning Spiking Neuronal Dynamics
 
-This is the supporting code for the technical report/paper:
+This is the supporting materials for the technical report/paper:
 <a href="">"A Practical Guide to Tuning Spiking Neuronal Dynamics"</a>. <br>
 <!--
 Note that this code was written on/run on an Ubuntu 22.04.2 LTS and 
