@@ -5,6 +5,8 @@ mkdir -p "exp/inputEncoding/periodicEncoding/phasor"
 mkdir -p "exp/inputEncoding/periodicEncoding/wave"
 mkdir -p "exp/inputEncoding/sparseInput/event"
 mkdir -p "exp/inputEncoding/unboundedInput/latency"
+mkdir -p "exp/spikeResponseModel/lifSRM"
+mkdir -p "exp/spikeResponseModel/rafSRM"
 
 echo "Running Input Encoding"
 echo "-- Running Bounded Input"
@@ -26,3 +28,12 @@ python -m src.inputEncoding.sparseInput.event.main
 echo "-- Running Unbounded Input"
 echo "---- Running Latency"
 python -m src.inputEncoding.unboundedInput.latency.main
+
+## execute spike-response model query plots
+echo "-- Running Spike-Response Model"
+echo "---- Running LIF-SRM"
+python -m src.spikeResponseModel.lifSRM.main
+
+echo "-- Running Spike-Response Model"
+echo "---- Running RAF-SRM"
+python -m src.spikeResponseModel.rafSRM.main
